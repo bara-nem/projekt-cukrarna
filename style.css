@@ -33,3 +33,73 @@ body {
 	margin: 0;
 }
 
+/* VŠE K PÍSMU */
+h1, h2, h3{
+	font-family: "Playfair Display", serif;
+}
+
+h1{
+	font-size: 52px;
+}
+
+h2{
+	font-size: 36px;
+	color: #3e606b;
+}
+
+h3{
+	font-size: 18px;
+}
+
+p, a{
+	font-family: "Lora", serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* SEKCE */ 
+
+.obsah, .background, footer, header{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.uvitani, .nabidka, .peceni{
+	padding: 80px 0;
+}
+
+.nabidka{
+	background-color: #f0f0f0;
+}
+
+footer{
+	padding: 30px 0;
+	color: white;
+	background-color: #303339;
+	text-align: center;
+}
+
+/* OBRÁZKY */ 
+ img{
+	display: block;
+	width: 100%;
+ }
+
+/* HLAVIČKA */
+
+.header {
+	display: flex;
+}
+
+.hlavicka img{
+	width: 170px;
+}
+
+li{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
