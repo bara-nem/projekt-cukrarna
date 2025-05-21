@@ -33,21 +33,20 @@ body {
 	margin: 0;
 }
 
-/* VŠE K PÍSMU */
+/* PÍSMO */
+
 h1, h2, h3{
 	font-family: "Playfair Display", serif;
+	font-weight: bold;
+	color: #3e606b;
+	padding: 0;
+	margin: 0;
 	line-height: 1.25;
 }
 
-h1{
-	font-size: 52px;
-	margin: 0;
-}
 
 h2{
 	font-size: 36px;
-	color: #3e606b;
-	margin: 0;
 }
 
 h3{
@@ -61,101 +60,162 @@ p, a{
 	color: #242424;
 }
 
-/* SEKCE */ 
+/* HORNÍ MENU */ 
 
-/*.obsah, .background, footer, header{
-	max-width: 1100px;
-	margin: 0 auto;
-}*/
-
-.obsah{
-	max-width: 1100px;
-	margin: 0 auto;
-}
-
-.uvitani, .nabidka, .peceni{
-	padding: 80px 0;
-}
-
-.nabidka{
-	background-color: #f0f0f0;
-}
-
-header div{
+.menu {
 	display: flex;
+	flex: 1 0 100%;
+	width: 1100px;
 	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
 }
 
-footer{
-	padding: 30px 0;
-	background-color: #303339;
-	text-align: center;
-}
-
-footer p{
-	margin: 0;
-	color: white;
-}
-
-/* OBRÁZKY */ 
- img{
-	display: block;
-	width: 100%;
- }
-
-/* HLAVIČKA */
-
-header {
-	display: flex;
-	padding: 30px 0;
-}
-
-.hlavicka img{
+.menu img{
 	width: 170px;
 }
 
-li{
+.menu li{
 	display: inline-block;
 	padding: 10px 15px;
 }
 
-a{
+.menu a{
+	list-style: none;
 	text-decoration: none;
 }
 
-.objednavka{
-	color: white;
+.menu a:hover{
 	background-color: #f195b2;
-	padding: 10px 15px;
+	color: whitesmoke;
+	border: 1px solid #f195b2;
 	border-radius: 20px;
+	padding: 5px;
 }
 
-a:hover{
+/* LOGO */
+
+.logo{
+	background-image: url(images/cupcake.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo header{
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.logo h1{
+	font-size: 52px;
+	color: whitesmoke;
+	padding-right: 440px;
+	padding-top: 80px;
+}
+
+.logo p{
+	font-size: 24px;
+	font-style: italic;
+	color: whitesmoke;
+	padding-right: 440px;
+	padding-bottom: 80px;
+	margin: 0;
+}
+
+/* UVÍTÁNÍ  A PEČENÍ */
+
+.box{
+	padding: 80px 0;
+}
+
+.boxik{
+	background-color: #f0f0f0;
+	padding: 80px 0;
+}
+
+.uvitani, .peceni{
+	display: flex;
+	margin: 0 auto;
+	width: 1100px;
+	gap: 30px;
+}
+
+.cukrarka img, .jahoda img{
+	border-radius: 5px;
+}
+
+.levy a{
+	list-style: none;
+	text-decoration: none;
+	background-color: #f195b2;
+	color: whitesmoke;
+	border-radius: 30px;
+	padding: 15px 40px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.levy a:hover{
 	background-color: #d2567d;
 }
 
-/* VELKÝ OBRÁZEK */
+/* NABÍDKA */ 
 
-.background{
-	background-image: url(images/cupcake.jpg);
-	background-size: cover;
-	color: white;
-	padding: 80px;
+.jedna{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1100px;
 }
 
-.background div{
-	width: 60%;
-}
-.background p{
-	font-style: italic;
-	font-size: 24px;
-	color: white;
+.nabidka{
+	display: flex;
+	margin: 0 auto;
+	width: 1100px;
+	gap: 30px;
 }
 
-/* SLOUPCE */
+.nabidka div{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	background-color: white;
+	overflow: hidden;
+}
 
-.sloupec{
-display: flex;
-gap: 30px;
-flex: 1 1 50%;
+.nabidka p{
+	padding: 5px 30px 30px 30px;
+	margin: 0;
+	text-align: center;
+}
+
+
+.nabidka h3{
+	padding: 30px 30px 5px 30px;
+	margin: 0;
+	text-align: center;
+}
+
+.nabidka img{
+    width: 100%;
+	display: block;
+	border-radius: 0;
+}
+
+/* PATIČKA */
+
+footer{
+	background-color: #303339;
+	padding: 30px 0;
+	color: whitesmoke;
+}
+
+.paticka{
+	color: whitesmoke;
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
 }
